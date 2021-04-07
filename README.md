@@ -11,3 +11,4 @@ For example:
 * [David Meir-Levy](https://www.davidlevy.co.il): Front end. Writing language: en.
 * [Uri Shaked](https://urish.org): IoT, Electronics, Frontend and more. English.
 * [camelCase](https://www.camelCase.blog): Software Engineering. Writing language: he.
+* [Yanai Edri](https://yedri.medium.com/): Software Engineering. Writing language: en/he.
