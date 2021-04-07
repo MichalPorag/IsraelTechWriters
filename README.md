@@ -9,3 +9,4 @@ For example:
 * [Michal Porag](https://michal-porag.medium.com/): Front end, computer science. Writing language: en.
 * [Elad Shechter](https://elad.medium.com/): CSS. Writing language: en.
 * [David Meir-Levy](https://www.davidlevy.co.il): Front end. Writing language: en.
+* [Uri Shaked](https://urish.org): IoT, Electronics, Frontend and more. English.
