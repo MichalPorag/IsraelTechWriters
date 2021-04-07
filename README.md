@@ -10,3 +10,4 @@ For example:
 * [Elad Shechter](https://elad.medium.com/): CSS. Writing language: en.
 * [David Meir-Levy](https://www.davidlevy.co.il): Front end. Writing language: en.
 * [Uri Shaked](https://urish.org): IoT, Electronics, Frontend and more. English.
+* [Guy Waldman](https://guywaldman.dev/): Full stack (mostly front end). Writing language: en.
