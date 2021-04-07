@@ -1,6 +1,6 @@
 # IsraelTechWriters
 This repo aim to gather all Israelis tech writer, feel free to open Pull Request and add your self❤️
-Attencion, please add ": " and than with comma separator the topics covered on the blog, and then ". Writing language: " and than with comma separator en / he.
+Attention, please add ": " and than with comma separator the topics covered on the blog, and then ". Writing language: " and than with comma separator en / he.
 For example: 
 "Front end, computer science. Writing language: en."
 
