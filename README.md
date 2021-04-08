@@ -28,5 +28,5 @@ Make sure your result matches these instructions:
 * [Eldad Fux](https://eldadfux.medium.com/): Dev worflows, Tech leadership and Appwrite. Writing language: en.
 * [Uri Shaked](https://urish.org): IoT, Electronics, Front end. English.
 * [camelCase](https://www.camelCase.blog): Software Engineering. Writing language: he.
-* [Nitzan Ohana](https://blog.nitzano.com): Full stack, Open Source. Writing language: en.
+* [Nitzan Ohana](https://blog.nitzano.com): Full stack, open source. Writing language: en.
 * [Tal Ohana](https://talohana.com): Front end. Writing language: en.
