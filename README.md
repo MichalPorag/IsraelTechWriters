@@ -29,4 +29,6 @@ Make sure your result matches these instructions:
 * [Uri Shaked](https://urish.org): IoT, Electronics, Front end. English.
 * [camelCase](https://www.camelCase.blog): Software Engineering. Writing language: he.
 * [Nitay Neeman](https://nitayneeman.com): Front end. Writing language: en.
+* [Nitzan Ohana](https://blog.nitzano.com): Full stack, open source. Writing language: en.
 * [Tal Ohana](https://talohana.com): Front end. Writing language: en.
+* [Liron Navon (codesight)](https://codesight.medium.com/): Computer Science, Full Stack Development, Machine learning. Writing language: en.
