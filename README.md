@@ -10,4 +10,4 @@ For example:
 * [Elad Shechter](https://elad.medium.com/): CSS. Writing language: en.
 * [David Meir-Levy](https://www.davidlevy.co.il): Front end. Writing language: en.
 * [Uri Shaked](https://urish.org): IoT, Electronics, Frontend and more. English.
-* [Yakov Rakhamimov](https://yakov.dev): Frontend development & soft skills. Writing language: en.
+* [Yakov Rakhamimov](https://yakov.dev): Frontend development, Soft skills. Writing language: en.
