@@ -21,11 +21,11 @@ Make sure your result matches these instructions:
 
 ## List of Writers
 
-* [Pull Request Community Blog](https://pullrequestcommunityisrael.medium.com/): open source. Writing language: en.
-* [Michal Porag](https://michal-porag.medium.com/): Front end, computer science. Writing language: en.
+* [Pull Request Community Blog](https://pullrequestcommunityisrael.medium.com/): Open source. Writing language: en.
+* [Michal Porag](https://michal-porag.medium.com/): Front end, Computer science. Writing language: en.
 * [Elad Shechter](https://elad.medium.com/): CSS. Writing language: en.
 * [David Meir-Levy](https://www.davidlevy.co.il): Front end. Writing language: en.
-* [Eldad Fux](https://eldadfux.medium.com/): Dev Worflows, Tech Leadership and Appwrite. Writing language: en.
-* [Uri Shaked](https://urish.org): IoT, Electronics, Frontend and more. English.
+* [Eldad Fux](https://eldadfux.medium.com/): Dev worflows, Tech leadership and Appwrite. Writing language: en.
+* [Uri Shaked](https://urish.org): IoT, Electronics, Front end. English.
 * [camelCase](https://www.camelCase.blog): Software Engineering. Writing language: he.
 * [Tal Ohana](https://talohana.com): Front end. Writing language: en.
