@@ -28,6 +28,7 @@ Make sure your result matches these instructions:
 * [Eldad Fux](https://eldadfux.medium.com/): Dev worflows, Tech leadership and Appwrite. Writing language: en.
 * [Uri Shaked](https://urish.org): IoT, Electronics, Front end. English.
 * [camelCase](https://www.camelCase.blog): Software Engineering. Writing language: he.
+* [Yanai Edri](https://yedri.medium.com/): Software Engineering. Writing language: en.
 * [Guy Waldman](https://guywaldman.dev/): Full stack, front end. Writing language: en.
 * [Nitay Neeman](https://nitayneeman.com): Front end. Writing language: en.
 * [Nitzan Ohana](https://blog.nitzano.com): Full stack, open source. Writing language: en.
