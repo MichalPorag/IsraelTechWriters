@@ -26,7 +26,7 @@ Make sure your result matches these instructions:
 * [Elad Shechter](https://elad.medium.com/): CSS. Writing language: en.
 * [David Meir-Levy](https://www.davidlevy.co.il): Front end. Writing language: en.
 * [Eldad Fux](https://eldadfux.medium.com/): Dev worflows, Tech leadership and Appwrite. Writing language: en.
-* [Uri Shaked](https://urish.org): IoT, Electronics, Front end. English.
+* [Uri Shaked](https://urish.org): IoT, Electronics, Front end. Writing language: he.
 * [camelCase](https://www.camelCase.blog): Software Engineering. Writing language: he.
 * [Yanai Edri](https://yedri.medium.com/): Software Engineering. Writing language: en.
 * [Guy Waldman](https://guywaldman.dev/): Full stack, front end. Writing language: en.
