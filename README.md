@@ -38,4 +38,5 @@ Make sure your result matches these instructions:
 * [Tal Ohana](https://talohana.com): Front end. Writing language: en.
 * [Liron Navon (codesight)](https://codesight.medium.com/): Computer Science, Full Stack Development, Machine learning. Writing language: en.
 * [Ariel Weinberger](https://arielweinberger.medium.com/): Full Stack Development, Security, Technology. Writing language: en.
+* [Orian Zinger](https://orianzinger.wordpress.com/): Computer Science, Backend Development, IoT. Writing language: en.
 * [Guy Sheffer (GuySoft)](https://guysoft.wordpress.com/): Open Source, Maker projects Writing language: en.
