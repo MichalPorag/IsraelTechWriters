@@ -39,3 +39,4 @@ Make sure your result matches these instructions:
 * [Ariel Weinberger](https://arielweinberger.medium.com/): Full Stack Development, Security, Technology. Writing language: en.
 * [Orian Zinger](https://orianzinger.wordpress.com/): Computer Science, Backend Development, IoT. Writing language: en.
 * [Guy Sheffer (GuySoft)](https://guysoft.wordpress.com/): Open Source, Maker projects Writing language: en.
+* [Dmitry Danilov](https://ddanilov.me/): Software Engineering, C++, Rust, Docker, Linux. Writing language: en.
