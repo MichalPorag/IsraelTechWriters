@@ -25,7 +25,6 @@ Make sure your result matches these instructions:
 * [Michal Porag](https://michal-porag.medium.com/): Front end, Computer science. Writing language: en.
 * [Elad Shechter](https://elad.medium.com/): CSS. Writing language: en.
 * [David Meir-Levy](https://www.davidlevy.co.il): Front end. Writing language: en.
-* [Uri Shaked](https://urish.org): IoT, Electronics, Frontend and more. English.
 * [Yakov Rakhamimov](https://yakov.dev): Frontend development, Soft skills. Writing language: en.
 * [Eldad Fux](https://eldadfux.medium.com/): Dev worflows, Tech leadership and Appwrite. Writing language: en.
 * [Uri Shaked](https://urish.org): IoT, Electronics, Front end. Writing language: he.
@@ -38,6 +37,6 @@ Make sure your result matches these instructions:
 * [Liron Navon (codesight)](https://codesight.medium.com/): Computer Science, Full Stack Development, Machine learning. Writing language: en.
 * [Ariel Weinberger](https://arielweinberger.medium.com/): Full Stack Development, Security, Technology. Writing language: en.
 * [Orian Zinger](https://orianzinger.wordpress.com/): Computer Science, Backend Development, IoT. Writing language: en.
-* [Guy Sheffer (GuySoft)](https://guysoft.wordpress.com/): Open Source, Maker projects Writing language: en.
+* [Guy Sheffer (GuySoft)](https://guysoft.wordpress.com/): Open Source, Maker projects. Writing language: en.
 * [Dmitry Danilov](https://ddanilov.me/): Software Engineering, C++, Rust, Docker, Linux. Writing language: en.
 * [Naomi Kriger](https://naomikriger.medium.com/): Software Engineering, Python, Data Analysis. Writing language: en.
