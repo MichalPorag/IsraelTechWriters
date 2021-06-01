@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { server } from '../config';
 
-export default function Home() {
+const Home = ({ blogs }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -63,3 +64,21 @@ export default function Home() {
     </div>
   )
 }
+
+export async function getServerSideProps(context) {
+    const res = await fetch(`${server}/api/blogs`)
+    const { data } = await res.json()
+
+    if (!data) {
+        return {
+            notFound: true,
+        }
+    }
+
+    return {
+        props: { blogs: data },
+    }
+}
+
+
+export default Home
