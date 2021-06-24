@@ -1,84 +1,103 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React, { useState, useEffect } from 'react'
 import { server } from '../config';
+import Header from '../components/Header/Header';
+import BlogCard from '../components/BlogCard/BlogCard';
 
-const Home = ({ blogs }) => {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const Home = ({ blogs, topics }) => {
+    const [searchQuery, setSearchQuery] = useState('')
+    const [selectedTopics, setSelectedTopics] = useState([])
+    const [filterdBlogs, setFilterdBlogs] = useState(blogs)
+    const [windowSize, setWindowSize] = useState({
+        width: undefined,
+        height: undefined,
+    });
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    useEffect(() => {
+        let filterdBlogs = blogs.filter(filterBySearch).filter(filterBySelectedTopics)
+        setFilterdBlogs(filterdBlogs)
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+    }, [searchQuery, selectedTopics])
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            function handleResize() {
+                setWindowSize({
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                });
+            }
+            window.addEventListener("resize", handleResize);
+            handleResize();
+            return () => window.removeEventListener("resize", handleResize);
+        }
+    }, []);
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+    const filterBySearch = (item) => searchQuery === '' || item.url.toLowerCase().includes(searchQuery.toLowerCase()) || item.name.toLowerCase().includes(searchQuery.toLowerCase())
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+    const filterBySelectedTopics = (item) => !selectedTopics.length || item.topics.filter(topic => selectedTopics.indexOf(topic) > -1).length
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    const handleSelectedTopicsChange = (topic) => {
+        if (selectedTopics.indexOf(topic) === -1) {
+            setSelectedTopics([...selectedTopics, topic])
+        } else {
+            let selectedCopied = [...selectedTopics]
+            selectedCopied.splice(selectedTopics.indexOf(topic), 1)
+            setSelectedTopics(selectedCopied)
+        }
+    }
+
+    const getColumnRepeat = (windowSize) => {
+        if (windowSize.width > 1400) return 4
+        else if (windowSize.width > 1050) return 3
+        else if (windowSize.width > 700) return 2
+        else return 1
+    }
+
+    const styles = {
+        root: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            overflow: "overlay",
+        },
+        gridContainer: {
+            display: 'grid',
+            gridTemplateColumns: `repeat( ${getColumnRepeat(windowSize)}, 1fr)`,
+            gap: 20,
+            padding: 20,
+        },
+    }
+
+    return (
+        <div style={styles.root}>
+            <Header topics={topics}
+                searchQuery={searchQuery}
+                onSearchChange={(value) => { setSearchQuery(value) }}
+                onSelectedTopicsChange={handleSelectedTopicsChange}
+                selectedTopics={selectedTopics} />
+            <div style={styles.gridContainer}>
+                {filterdBlogs.map(item => (<BlogCard key={item.url} {...item} />))}
+            </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+    )
 }
 
 export async function getServerSideProps(context) {
     const res = await fetch(`${server}/api/blogs`)
-    const { data } = await res.json()
+    const data = await res.json()
 
     if (!data) {
         return {
             notFound: true,
         }
     }
+    const { blogs, topics } = data;
 
     return {
-        props: { blogs: data },
+        props: { blogs, topics },
     }
 }
 
 
 export default Home
+
