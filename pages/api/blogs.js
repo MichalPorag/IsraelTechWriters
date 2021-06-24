@@ -23,8 +23,21 @@ const parseData = async (data) => {
     return mapped
 }
 
+const extractTopics = (blogs) => {
+    return blogs.reduce((acc, { topics }) => {
+        topics.forEach(topic => {
+            if (acc.indexOf(topic) > -1) return acc
+            acc = [...acc, topic]
+
+        });
+        return acc
+    }, [])
+}
+
 export default async (req, res) => {
     const fileData = await readFile(join(process.cwd(),'/README.md'), "utf8");
     const parsedData = await parseData(fileData)    
-    res.status(200).json({ data: parsedData })
+
+
+    res.status(200).json({ blogs: parsedData, topics: extractTopics(parsedData) })
 }
