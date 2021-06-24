@@ -52,11 +52,7 @@ const Header = ({
 			cursor: 'pointer',
 			height: 30,
 			borderRadius: 15,
-			backgroundColor:
-				selectedTopics.indexOf(item) === -1 ? 'lightcoral' : '#f7ffe5',
-			border: `1px solid ${
-				selectedTopics.indexOf(item) === -1 ? 'lightcoral' : '#f7ffe5'
-			}`,
+
 			margin: 4,
 			padding: 4,
 			whiteSpace: 'no-wrap',
@@ -84,7 +80,18 @@ const Header = ({
 								onClick={() => {
 									onSelectedTopicsChange(item);
 								}}
-								style={styles.topicChip}
+								style={{
+									...styles.topicChip,
+									backgroundColor:
+										selectedTopics.indexOf(item) === -1
+											? 'lightcoral'
+											: '#f7ffe5',
+									border: `1px solid ${
+										selectedTopics.indexOf(item) === -1
+											? 'lightcoral'
+											: '#f7ffe5'
+									}`,
+								}}
 								key={item}
 							>
 								{item}
